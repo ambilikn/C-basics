@@ -3,11 +3,13 @@
 main()
 {
 	int a[4][4],i,j,sum=0;
-	printf("Enter numbers of matrix");
-	for(i=0;i<4;i++)
-		for(j=0;j<4;j++)
+	printf("Input elements in the matrix");
+	for(i=0;i<3;i++)
+		for(j=0;j<3;j++)
 		{
-			scanf("%d",&a[i][j]);
+			printf("\nelement[%d][%d]: ",i,j);
+			//scanf("%d",&a[i][j]);
+			scanf("%d",(*(a+i)+j));
 			if(i==j)
 				sum=sum+a[i][j];
 	}
